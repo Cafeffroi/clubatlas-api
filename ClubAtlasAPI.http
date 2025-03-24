@@ -1,0 +1,55 @@
+﻿@ClubAtlasAPI_HostAddress = https://localhost:7245
+
+POST {{ClubAtlasAPI_HostAddress}}/clubitems
+Content-Type: application/json
+
+{
+  "name": "Sample Club",
+  "stub": "sample-club",
+  "presentation": "This is a sample club for demonstration purposes.",
+  "startDate": "2025-01-01T00:00:00Z",
+  "adress": "123 Main Street, Paris, France",
+  "phone": "+33 1 23 45 67 89",
+  "email": "contact@sampleclub.com",
+  "contact": "John Doe",
+  "instagramUrl": "https://instagram.com/sampleclub",
+  "facebookUrl": "https://facebook.com/sampleclub",
+  "twitterUrl": "https://twitter.com/sampleclub",
+  "blueskyUrl": "https://bsky.app/profile/sampleclub.bsky.social"
+}
+
+###
+
+GET {{ClubAtlasAPI_HostAddress}}/clubitems
+
+###
+
+@id=1
+GET {{ClubAtlasAPI_HostAddress}}/clubitems/{{id}}
+
+###
+
+PUT {{ClubAtlasAPI_HostAddress}}/clubitems/{{id}}
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Sample Club",
+  "stub": "sample-club",
+  "presentation": "This is a sample club for demonstration purposes.",
+  "startDate": "2025-01-01T00:00:00Z",
+  "adress": "123 Main Street, Paris, France",
+  "phone": "+33 1 23 45 67 89",
+  "email": "contact@sampleclub.com",
+  "contact": "John DoeDoe",
+  "instagramUrl": "https://instagram.com/sampleclub",
+  "facebookUrl": "https://facebook.com/sampleclub",
+  "twitterUrl": "https://twitter.com/sampleclub",
+  "blueskyUrl": "https://bsky.app/profile/sampleclub.bsky.social"
+}
+
+###
+
+DELETE {{ClubAtlasAPI_HostAddress}}/clubitems/1
+
+###
