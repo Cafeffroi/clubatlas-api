@@ -1,6 +1,6 @@
 ﻿@ClubAtlasAPI_HostAddress = https://localhost:7245
 
-POST {{ClubAtlasAPI_HostAddress}}/clubitems
+POST {{ClubAtlasAPI_HostAddress}}/clubs
 Content-Type: application/json
 
 {
@@ -20,16 +20,16 @@ Content-Type: application/json
 
 ###
 
-GET {{ClubAtlasAPI_HostAddress}}/clubitems
+GET {{ClubAtlasAPI_HostAddress}}/clubs
 
 ###
 
 @id=1
-GET {{ClubAtlasAPI_HostAddress}}/clubitems/{{id}}
+GET {{ClubAtlasAPI_HostAddress}}/clubs/{{id}}
 
 ###
 
-PUT {{ClubAtlasAPI_HostAddress}}/clubitems/{{id}}
+PUT {{ClubAtlasAPI_HostAddress}}/clubs/{{id}}
 Content-Type: application/json
 
 {
@@ -50,6 +50,6 @@ Content-Type: application/json
 
 ###
 
-DELETE {{ClubAtlasAPI_HostAddress}}/clubitems/1
+DELETE {{ClubAtlasAPI_HostAddress}}/clubs/1
 
 ###
