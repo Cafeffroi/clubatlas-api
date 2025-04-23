@@ -15,7 +15,9 @@
         public string? FacebookUrl { get; set; }
         public string? TwitterUrl { get; set; }
         public string? BlueskyUrl { get; set; }
-
-
+        public double? Latitude { get; set; }
+        public double? Longitude { get; set; }
+        // Change this line - remove the nullable marker from the collection itself
+        public ICollection<ActivityByClub> ActivityByClubs { get; set; } = new List<ActivityByClub>();
     }
 }
